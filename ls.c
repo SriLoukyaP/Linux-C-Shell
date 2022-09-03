@@ -184,7 +184,7 @@ void readir(char path[], int flag_l, int flag_a)
 
                     struct stat b = {0};
                     if (stat(filepath, &b) == 0)
-                        if (flag_a != 1)
+                        if (flag_a < 1)
                         {
                             if (read[x]->d_name[0] != '.')
                             {
